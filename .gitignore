@@ -1,0 +1,8 @@
+tsconfig.tsbuildinfo
+*.tsbuildinfo
+node_modules/
+dist/
+coverage/
+*.log
+.DS_Store
+.vite/

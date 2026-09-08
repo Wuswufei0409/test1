@@ -1,0 +1,31 @@
+{
+  "name": "minecraft-web-1-4-0",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "多 Agent：网页端 Minecraft Bedrock 1.4.0 高还原度复刻 —— 阶段 0 工程脚手架、架构契约与原创素材规范",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "check": "npm run typecheck && npm run test && npm run build"
+  },
+  "dependencies": {
+    "three": "^0.169.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.12.0",
+    "@types/three": "^0.169.0",
+    "@typescript-eslint/eslint-plugin": "^8.8.0",
+    "@typescript-eslint/parser": "^8.8.0",
+    "eslint": "^9.12.0",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.8",
+    "typescript-eslint": "^8.8.0",
+    "vitest": "^2.1.2"
+  }
+}
