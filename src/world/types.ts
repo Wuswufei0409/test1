@@ -82,6 +82,8 @@ export type BlockId =
   | "mushroom_red"
   | "mushroom_brown"
   | "wheat"
+  // 农业
+  | "farmland"
   // 液体
   | "water"
   | "lava"

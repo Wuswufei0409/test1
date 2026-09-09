@@ -196,6 +196,10 @@ export const BLOCKS: Record<BlockId, BlockMeta> = {
     id: "wheat", name: "小麦", hardness: 0, tool: "none", tier: 0, drop: "wheat",
     solid: false, liquid: false, opaque: false, color: 0xd4b94e,
   }),
+  farmland: meta({
+    id: "farmland", name: "耕地", hardness: 0.6, tool: "shovel", tier: 0, drop: "dirt",
+    solid: true, liquid: false, opaque: true, color: 0x6d4a2b,
+  }),
   water: meta({
     id: "water", name: "水", hardness: 100, tool: "none", tier: 0, drop: "air",
     solid: false, liquid: true, opaque: false, color: 0x3c6ea5,
