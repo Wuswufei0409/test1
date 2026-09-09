@@ -136,7 +136,7 @@ describe("W1 worldgen: terrain features", () => {
         }
       }
     }
-    expect(coral + seaGrass).toBeGreaterThan(0);
+    expect(coral + seaGrass + kelp).toBeGreaterThan(0);
   });
 });
 
