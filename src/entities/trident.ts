@@ -8,7 +8,6 @@
  *   Impaling（对水生生物增伤）至少实现其中三个并有确定性场景断言（此处四个全实现）。
  */
 
-import type { Difficulty } from "../survival/types";
 import { meleeDamage } from "../survival/systems";
 import type { Rng, SeedInput } from "../core/seed";
 import { createRng } from "../core/seed";
@@ -51,14 +50,13 @@ export interface TridentSpec extends WeaponDef {
 
 export const TRIDENT: TridentSpec = {
   id: "trident",
-  name: "三叉戟",
   damageHalfHearts: 9,
   durabilityCost: 1,
   maxDurability: 250,
   cooldownTicks: 12,
   rangeBlocks: 24,
   speedPerTick: 1.1,
-  gravity: 0.045,
+  gravity: 0.01,
   launchLift: 0.12,
   returnSpeed: 2.6,
   hitRadius: 1.2,
@@ -286,6 +284,14 @@ export function resolveHit(
     scaled,
     impalingBonus,
     lightning,
+  };
+}
+
+/** 命中后（或落地后）转入返回/落地阶段：Loyalty → returning，否则 stuck。 */
+export function beginReturn(proj: TridentProjectile): TridentProjectile {
+  return {
+    ...proj,
+    phase: proj.enchant.has("loyalty") ? "returning" : "stuck",
   };
 }
 
