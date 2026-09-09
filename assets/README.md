@@ -23,7 +23,62 @@ assets/
 
 | 路径 | 类型 | 来源 | 许可证 | 说明 |
 | ---- | ---- | ---- | ------ | ---- |
-| `textures/`（目录级占位） | 纹理 | 原创/程序生成 | MIT | 阶段 0 未放置实际纹理；渲染先用代码内纯色占位 |
+| `textures/`（程序生成） | 纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | 阶段 1：48 个方块的程序生成像素纹理，见下方逐项登记 |
+| `audio/`（目录级占位） | 音频 | — | — | 暂无音频资产 |
+| `models/`（目录级占位） | 模型 | — | — | 暂无模型资产 |
+
+### 纹理逐项登记（程序生成，原创建意资产）
+
+| 路径 | 类型 | 来源 | 许可证 | 说明 |
+| ---- | ---- | ---- | ------ | ---- |
+| `textures/air.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | air 方块基础色 + 确定性像素噪声 |
+| `textures/bedrock.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | bedrock 方块基础色 + 确定性像素噪声 |
+| `textures/bookshelf.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | bookshelf 方块基础色 + 确定性像素噪声 |
+| `textures/cactus.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | cactus 方块基础色 + 确定性像素噪声 |
+| `textures/chest.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | chest 方块基础色 + 确定性像素噪声 |
+| `textures/clay.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | clay 方块基础色 + 确定性像素噪声 |
+| `textures/coal_ore.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | coal_ore 方块基础色 + 确定性像素噪声 |
+| `textures/coarse_dirt.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | coarse_dirt 方块基础色 + 确定性像素噪声 |
+| `textures/cobblestone.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | cobblestone 方块基础色 + 确定性像素噪声 |
+| `textures/coral.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | coral 方块基础色 + 确定性像素噪声 |
+| `textures/coral_block.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | coral_block 方块基础色 + 确定性像素噪声 |
+| `textures/crafting_table.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | crafting_table 方块基础色 + 确定性像素噪声 |
+| `textures/diamond_ore.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | diamond_ore 方块基础色 + 确定性像素噪声 |
+| `textures/dirt.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | dirt 方块基础色 + 确定性像素噪声 |
+| `textures/flower_blue_orchid.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | flower_blue_orchid 方块基础色 + 确定性像素噪声 |
+| `textures/flower_dandelion.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | flower_dandelion 方块基础色 + 确定性像素噪声 |
+| `textures/flower_poppy.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | flower_poppy 方块基础色 + 确定性像素噪声 |
+| `textures/furnace.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | furnace 方块基础色 + 确定性像素噪声 |
+| `textures/gold_ore.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | gold_ore 方块基础色 + 确定性像素噪声 |
+| `textures/grass.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | grass 方块基础色 + 确定性像素噪声 |
+| `textures/gravel.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | gravel 方块基础色 + 确定性像素噪声 |
+| `textures/ice.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | ice 方块基础色 + 确定性像素噪声 |
+| `textures/iron_ore.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | iron_ore 方块基础色 + 确定性像素噪声 |
+| `textures/kelp.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | kelp 方块基础色 + 确定性像素噪声 |
+| `textures/lapis_ore.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | lapis_ore 方块基础色 + 确定性像素噪声 |
+| `textures/lava.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | lava 方块基础色 + 确定性像素噪声 |
+| `textures/leaves_oak.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | leaves_oak 方块基础色 + 确定性像素噪声 |
+| `textures/leaves_spruce.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | leaves_spruce 方块基础色 + 确定性像素噪声 |
+| `textures/log_oak.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | log_oak 方块基础色 + 确定性像素噪声 |
+| `textures/log_spruce.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | log_spruce 方块基础色 + 确定性像素噪声 |
+| `textures/mushroom_brown.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | mushroom_brown 方块基础色 + 确定性像素噪声 |
+| `textures/mushroom_red.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | mushroom_red 方块基础色 + 确定性像素噪声 |
+| `textures/obsidian.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | obsidian 方块基础色 + 确定性像素噪声 |
+| `textures/packed_ice.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | packed_ice 方块基础色 + 确定性像素噪声 |
+| `textures/planks_oak.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | planks_oak 方块基础色 + 确定性像素噪声 |
+| `textures/prismarine.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | prismarine 方块基础色 + 确定性像素噪声 |
+| `textures/red_sand.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | red_sand 方块基础色 + 确定性像素噪声 |
+| `textures/sand.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | sand 方块基础色 + 确定性像素噪声 |
+| `textures/sandstone.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | sandstone 方块基础色 + 确定性像素噪声 |
+| `textures/sea_grass.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | sea_grass 方块基础色 + 确定性像素噪声 |
+| `textures/sea_lantern.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | sea_lantern 方块基础色 + 确定性像素噪声 |
+| `textures/snow.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | snow 方块基础色 + 确定性像素噪声 |
+| `textures/sponge.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | sponge 方块基础色 + 确定性像素噪声 |
+| `textures/stone.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | stone 方块基础色 + 确定性像素噪声 |
+| `textures/sugar_cane.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | sugar_cane 方块基础色 + 确定性像素噪声 |
+| `textures/tall_grass.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | tall_grass 方块基础色 + 确定性像素噪声 |
+| `textures/water.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | water 方块基础色 + 确定性像素噪声 |
+| `textures/wheat.png` | 程序生成像素纹理 | 原创（脚本 scripts/generate-textures.mjs） | MIT | wheat 方块基础色 + 确定性像素噪声 | | 纹理 | 原创/程序生成 | MIT | 阶段 0 未放置实际纹理；渲染先用代码内纯色占位 |
 | `audio/`（目录级占位） | 音频 | — | — | 暂无音频资产 |
 | `models/`（目录级占位） | 模型 | — | — | 暂无模型资产 |
 
