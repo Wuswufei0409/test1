@@ -14,6 +14,7 @@ import {
   WORLD_HEIGHT,
 } from "./types";
 import type { BiomeId, BlockId, BlockPos, WorldRead } from "./types";
+import { applyOceanStructuresToChunk } from "./structures";
 
 /** 确定性格点值噪声（原创实现，同 seed 必同输出）。 */
 function makeNoise(seed: Seed) {
@@ -352,6 +353,9 @@ export class DeterministicTerrainGenerator {
         }
       }
     }
+
+    // W10：海洋结构（珊瑚礁/冰山/沉船/水下遗迹/埋藏宝藏）确定性叠印
+    applyOceanStructuresToChunk(this, grid, cx, cz);
     return grid;
   }
 

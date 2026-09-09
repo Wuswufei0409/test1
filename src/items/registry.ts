@@ -136,6 +136,13 @@ export const ITEMS: Record<ItemId, ItemDef> = {
   diamond_sword: def({ id: "diamond_sword", name: "钻石剑", kind: "weapon", stackLimit: B1, durability: 1561, tier: 4, tool: "sword", digMultiplier: 1 }),
   trident: def({ id: "trident", name: "三叉戟", kind: "weapon", stackLimit: B1, durability: 250, tier: 2, tool: "none", digMultiplier: 1 }),
 
+  // ---------- 埋藏宝藏战利品（W10，IMP-10） ----------
+  emerald: def({ id: "emerald", name: "绿宝石", kind: "material", stackLimit: B64 }),
+  heart_of_the_sea: def({ id: "heart_of_the_sea", name: "海洋之心", kind: "material", stackLimit: B1 }),
+  nautilus_shell: def({ id: "nautilus_shell", name: "鹦鹉螺壳", kind: "material", stackLimit: B64 }),
+  bone: def({ id: "bone", name: "骨头", kind: "material", stackLimit: B64 }),
+  treasure_map: def({ id: "treasure_map", name: "藏宝图", kind: "crafted", stackLimit: B1 }),
+
   // ---------- 合成物 ----------
   torch: def({ id: "torch", name: "火把", kind: "crafted", stackLimit: B64 }),
   bucket: def({ id: "bucket", name: "铁桶", kind: "crafted", stackLimit: B16 }),
