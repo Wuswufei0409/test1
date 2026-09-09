@@ -7,22 +7,12 @@ import * as THREE from "three";
 import type { GeneratedWorld } from "../world/generator";
 import { CHUNK_SIZE } from "../world/types";
 import type { BlockId } from "../world/types";
+import { blockColor } from "../blocks/registry";
 
-/** 方块的简单占位颜色（阶段 0）。后续换原创像素纹理。 */
-const BLOCK_COLOR: Record<BlockId, number> = {
-  air: 0x000000,
-  grass: 0x5cb85c,
-  dirt: 0x8b5a2b,
-  stone: 0x8a8a8a,
-  sand: 0xe8d49a,
-  water: 0x3c6ea5,
-  log_oak: 0x6b4a2b,
-  leaves_oak: 0x2e7d32,
-  snow: 0xffffff,
-  ice: 0x9ad7ff,
-  coral: 0xff6f9c,
-  gravel: 0x9b9b9b,
-};
+/** 取方块占位颜色（阶段 1 使用注册表；纹理接入由后续阶段完成）。 */
+function colorOf(block: BlockId): number {
+  return blockColor(block);
+}
 
 export class StageRenderer {
   private renderer: THREE.WebGLRenderer;
@@ -72,7 +62,7 @@ export class StageRenderer {
           if (!mesh) {
             const geo = new THREE.BoxGeometry(1, 1, 1);
             const mat = new THREE.MeshLambertMaterial({
-              color: BLOCK_COLOR[block],
+              color: colorOf(block),
             });
             mesh = new THREE.Mesh(geo, mat);
             mesh.position.set(wx - 0.5, y - 0.5, wz - 0.5);

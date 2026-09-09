@@ -37,20 +37,70 @@ export type BiomeId =
   | "ocean_warm"
   | "ocean_deep";
 
-/** 可区分方块 ID（阶段 0 先声明子集，阶段 1+ 继续扩）。 */
+/**
+ * 可区分方块 ID（阶段 1 扩充到 30+）。
+ * 每个 ID 的元数据（硬度/工具/掉落/纹理）见 {@link ../blocks/registry}。
+ */
 export type BlockId =
+  // 基础
   | "air"
+  | "stone"
   | "grass"
   | "dirt"
-  | "stone"
+  | "coarse_dirt"
+  | "cobblestone"
+  | "bedrock"
+  | "gravel"
+  // 沙/石系
   | "sand"
-  | "water"
-  | "log_oak"
-  | "leaves_oak"
+  | "red_sand"
+  | "sandstone"
+  | "clay"
   | "snow"
   | "ice"
+  | "packed_ice"
+  | "obsidian"
+  // 矿石
+  | "coal_ore"
+  | "iron_ore"
+  | "gold_ore"
+  | "diamond_ore"
+  | "lapis_ore"
+  // 木头/树叶/木板
+  | "log_oak"
+  | "log_spruce"
+  | "planks_oak"
+  | "leaves_oak"
+  | "leaves_spruce"
+  // 植被与作物
+  | "tall_grass"
+  | "cactus"
+  | "sugar_cane"
+  | "flower_poppy"
+  | "flower_dandelion"
+  | "flower_blue_orchid"
+  | "mushroom_red"
+  | "mushroom_brown"
+  | "wheat"
+  // 液体
+  | "water"
+  | "lava"
+  // 水下
+  | "sea_grass"
+  | "kelp"
   | "coral"
-  | "gravel";
+  | "coral_block"
+  | "sponge"
+  | "sea_lantern"
+  | "prismarine"
+  // 功能/装饰
+  | "crafting_table"
+  | "furnace"
+  | "chest"
+  | "bookshelf";
+
+/** 海洋基准海平面（Y）。低于该值的非实心位置由水填充。 */
+export const SEA_LEVEL = 24;
 
 /** 只读世界查询契约。 */
 export interface WorldRead {

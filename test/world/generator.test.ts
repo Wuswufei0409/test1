@@ -53,8 +53,7 @@ describe("GeneratedWorld (Smoke)", () => {
   it("schema smoke: slice values are block ids", () => {
     const w = new GeneratedWorld(1400);
     const b = w.getBlock({ x: 0, y: 0, z: 0 });
-    expect(["air", "grass", "dirt", "stone", "sand", "water"].includes(b)).toBe(
-      true
-    );
+    // 阶段 1：y=0 为基岩层，属合法方块 ID（覆盖阶段 0 的窄集合断言）。
+    expect(b).toBe("bedrock");
   });
 });
