@@ -20,6 +20,7 @@ export * from "./survival/food";
 export * from "./world/cycle";
 export * from "./entities/mob";
 export * from "./entities/combat";
+export * from "./entities/trident";
 export * from "./entities/ai";
 export * from "./entities/types";
 export * from "./save/types";

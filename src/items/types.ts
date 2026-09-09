@@ -81,6 +81,8 @@ export type ItemId =
   | "stone_sword"
   | "iron_sword"
   | "diamond_sword"
+  // 三叉戟（W8，IMP-8）
+  | "trident"
   // 合成物
   | "torch"
   | "bucket"
