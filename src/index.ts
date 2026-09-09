@@ -25,4 +25,6 @@ export * from "./entities/combat";
 export * from "./entities/trident";
 export * from "./entities/ai";
 export * from "./entities/types";
+export * from "./water/types";
+export * from "./water/water";
 export * from "./save/types";
