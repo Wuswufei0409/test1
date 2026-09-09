@@ -10,5 +10,7 @@ export * from "./world/generator";
 export * from "./player/types";
 export * from "./items/types";
 export * from "./survival/types";
+export * from "./survival/systems";
+export * from "./survival/food";
 export * from "./entities/types";
 export * from "./save/types";
