@@ -134,6 +134,7 @@ export const ITEMS: Record<ItemId, ItemDef> = {
   stone_sword: def({ id: "stone_sword", name: "石剑", kind: "weapon", stackLimit: B1, durability: 131, tier: 2, tool: "sword", digMultiplier: 1 }),
   iron_sword: def({ id: "iron_sword", name: "铁剑", kind: "weapon", stackLimit: B1, durability: 250, tier: 3, tool: "sword", digMultiplier: 1 }),
   diamond_sword: def({ id: "diamond_sword", name: "钻石剑", kind: "weapon", stackLimit: B1, durability: 1561, tier: 4, tool: "sword", digMultiplier: 1 }),
+  trident: def({ id: "trident", name: "三叉戟", kind: "weapon", stackLimit: B1, durability: 250, tier: 2, tool: "none", digMultiplier: 1 }),
 
   // ---------- 合成物 ----------
   torch: def({ id: "torch", name: "火把", kind: "crafted", stackLimit: B64 }),
