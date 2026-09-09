@@ -83,6 +83,12 @@ export type ItemId =
   | "diamond_sword"
   // 三叉戟（W8，IMP-8）
   | "trident"
+  // 埋藏宝藏战利品（W10，IMP-10）
+  | "emerald"
+  | "heart_of_the_sea"
+  | "nautilus_shell"
+  | "bone"
+  | "treasure_map"
   // 合成物
   | "torch"
   | "bucket"

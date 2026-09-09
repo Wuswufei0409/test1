@@ -18,6 +18,8 @@ export * from "./survival/types";
 export * from "./survival/systems";
 export * from "./survival/food";
 export * from "./world/cycle";
+export * from "./world/structures";
+export * from "./world/treasure";
 export * from "./farming/types";
 export * from "./farming/farm";
 export * from "./entities/mob";
